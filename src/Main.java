@@ -59,13 +59,13 @@ public class Main
         System.out.println("Введите длину стороны квадрата:");
         float side = scanner.nextFloat();
 
-        if (side <= 0) throw new IllegalArgumentException("Длина должна быть больше нуля");
+        if (side <= 0) throw new RuntimeException("Длина должна быть больше нуля");
 
         return side;
     }
 
     private static void printArea(String pictureName, float area)
     {
-        System.out.printf("Высота фигуры на рис. %s: %.3f\n", pictureName, area);
+        System.out.printf("Площадь фигуры на рис. %s: %.3f\n", pictureName, area);
     }
 }
